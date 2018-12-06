@@ -46,7 +46,7 @@ export default {
  },
   methods: {
     async getAccessToken() {
-      return await axios.get(`https://limitless-bastion-15679.herokuapp.com/token?identity=${this.username}`);
+      return await axios.get(`http://localhost:3000/token?identity=${this.username}`);
     },
     // Trigger log events 
    dispatchLog(message) {
